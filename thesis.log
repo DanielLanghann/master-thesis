@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  2 FEB 2025 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  2 FEB 2025 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -150,12 +150,7 @@ Package: babel 2023/02/13 3.86 The Babel package
  (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count272
- (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-german/ngerman.ldf
-Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthography)
- (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-german/ngermanb.ldf
-Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthography)
-Package babel Info: Making " an active character on input line 122.
-)) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-english/american.ldf
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-english/american.ldf
 Language: american 2017/06/06 v3.3r English support from the babel system
  (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
@@ -165,12 +160,17 @@ Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
 (babel)             (\language21). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
 (babel)             (\language21). Reported on input line 108.
-))) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/en/babel-american.tex
-Package babel Info: Importing font and identification data for american
-(babel)             from babel-en-US.ini. Reported on input line 11.
-) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
+)) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthography)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthography)
+Package babel Info: Making " an active character on input line 122.
+))) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/de/babel-ngerman.tex
 Package babel Info: Importing font and identification data for ngerman
 (babel)             from babel-de.ini. Reported on input line 11.
+) (/usr/local/texlive/2023/texmf-dist/tex/generic/babel/locale/en/babel-american.tex
+Package babel Info: Importing font and identification data for american
+(babel)             from babel-en-US.ini. Reported on input line 11.
 )) (./classicthesis-config.tex (/usr/local/texlive/2023/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks25
@@ -1106,11 +1106,11 @@ Package: scrtime 2022/10/12 v3.38 KOMA-Script package (time of LaTeX run)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
-Package csquotes Info: Redefining alias 'default' -> 'american'.
+Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 LaTeX Font Info:    Trying to load font information for T1+pplj on input line 60.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
-) (./thesis.aux (./frontbackmatter/Titlepage.aux) (./frontbackmatter/Titleback.aux) (./frontbackmatter/Declaration.aux) (./frontbackmatter/Abstract.aux) (./frontbackmatter/Contents.aux) (./frontbackmatter/Acronyms.aux) (./chapters/examples/chapter01.aux) (./chapters/examples/chapter02.aux) (./chapters/examples/chapter03.aux) (./frontbackmatter/Bibliography.aux))
+) (./thesis.aux (./frontbackmatter/Titlepage.aux) (./frontbackmatter/Titleback.aux) (./frontbackmatter/Declaration.aux) (./frontbackmatter/Abstract.aux) (./frontbackmatter/Contents.aux) (./frontbackmatter/Acronyms.aux) (./chapters/examples/chapter01.aux) (./frontbackmatter/Bibliography.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -1131,31 +1131,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
 LaTeX Font Info:    ... okay on input line 60.
-Package scrbase Info: activating american \abstractname on input line 60.
-Package scrbase Info: activating american \partname on input line 60.
-Package scrbase Info: activating american \chaptername on input line 60.
-Package scrbase Info: activating american \appendixname on input line 60.
-Package scrbase Info: activating american \figurename on input line 60.
-Package scrbase Info: activating american \tablename on input line 60.
-Package scrbase Info: activating american \contentsname on input line 60.
-Package scrbase Info: activating american \listfigurename on input line 60.
-Package scrbase Info: activating american \listtablename on input line 60.
-Package scrbase Info: activating american \bibname on input line 60.
-Package scrbase Info: activating american \indexname on input line 60.
-Package biblatex Info: Trying to load language 'american'...
-Package biblatex Info: ... file 'american.lbx' found.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/american.lbx
-File: american.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
-))
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/ngerman.lbx
@@ -1169,6 +1144,20 @@ Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+))
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 ))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Data encoding 'ascii' specified.
@@ -1266,41 +1255,41 @@ File: gfx/fernuni_hagen_logo.pdf Graphic file (type pdf)
 <use gfx/fernuni_hagen_logo.pdf>
 Package pdftex.def Info: gfx/fernuni_hagen_logo.pdf  used on input line 18.
 (pdftex.def)             Requested size: 85.35826pt x 79.5517pt.
-LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 58.
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 49.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 58.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 49.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 58.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 49.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 58.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 49.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 58.
+(Font)              scaled to size 11.40997pt on input line 49.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 58.
+(Font)              scaled to size 8.33606pt on input line 49.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 58.
+(Font)              scaled to size 6.25204pt on input line 49.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 58.
+(Font)              scaled to size 11.40997pt on input line 49.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 58.
+(Font)              scaled to size 8.33606pt on input line 49.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 58.
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 58.
+(Font)              scaled to size 6.25204pt on input line 49.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 49.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
@@ -1339,16 +1328,20 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 \openout2 = `frontbackmatter/Abstract.aux'.
 
  (./frontbackmatter/Abstract.tex
-LaTeX Font Info:    Trying to load font information for T1+fvm on input line 20.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/bera/t1fvm.fd
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 20.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `fvm' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+Overfull \hbox (1.63145pt too wide) in paragraph at lines 9--25
+\T1/pplj/m/n/10.95 Beispiel transak-tions-basierte Daten auf der einen Seite und ag-gregierte Daten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--39
+
+ []
+
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 10.42007pt on input line 75.
@@ -1409,12 +1402,13 @@ Package microtype Info: Character `029' is missing
 \openout2 = `chapters/examples/chapter01.aux'.
 
  (./chapters/examples/chapter01.tex
-Kapitel 1.
+Chapter 1.
 Package acronym Info: Label `acro:UML' newly defined as it shall be overridden
-although it is yet undefined on input line 20.
+although it is yet undefined on input line 25.
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 27.
-) [1
+although it is yet undefined on input line 32.
+Chapter 2.
+[1
 
 
 
@@ -1427,84 +1421,37 @@ although it is yet undefined on input line 27.
 
 
 ]
-\openout2 = `chapters/examples/chapter02.aux'.
-
- (./chapters/examples/chapter02.tex
-Kapitel 2.
-
-Overfull \hbox (14.28162pt too wide) in paragraph at lines 17--18
-\T1/pplj/m/n/10.95 Tu uno ve-ni ame-ri-ca-no sanc-ti-fi-ca-te. Pan e uni-on lin-gui-stic Cor-men u.a. [[][]Cor+09[][]]
- []
-
+Chapter 3.
 [2
 
 
+]
+Chapter 4.
+[3
 
 
-
-]) [3]
-\openout2 = `chapters/examples/chapter03.aux'.
-
- (./chapters/examples/chapter03.tex
-Kapitel 3.
+]
+Chapter 5.
 [4
 
 
+]
+Chapter 6.
+[5
 
 
+]) [6
 
-] [5]
-<gfx/examples/setup.pdf, id=140, 459.39629pt x 315.89015pt>
-File: gfx/examples/setup.pdf Graphic file (type pdf)
-<use gfx/examples/setup.pdf>
-Package pdftex.def Info: gfx/examples/setup.pdf  used on input line 55.
-(pdftex.def)             Requested size: 185.0pt x 127.20697pt.
-<gfx/examples/qq-plot_gaus_vs_160.pdf, id=141, 449.68pt x 338.26375pt>
-File: gfx/examples/qq-plot_gaus_vs_160.pdf Graphic file (type pdf)
-<use gfx/examples/qq-plot_gaus_vs_160.pdf>
-Package pdftex.def Info: gfx/examples/qq-plot_gaus_vs_160.pdf  used on input line 71.
-(pdftex.def)             Requested size: 166.49887pt x 125.24336pt.
-<gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf, id=142, 449.68pt x 337.26pt>
-File: gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf Graphic file (type pdf)
-<use gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf>
-Package pdftex.def Info: gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf  used on input line 75.
-(pdftex.def)             Requested size: 166.49887pt x 124.87172pt.
-File: gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf Graphic file (type pdf)
-<use gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf>
-Package pdftex.def Info: gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf  used on input line 79.
-(pdftex.def)             Requested size: 166.49887pt x 124.87172pt.
-File: gfx/examples/qq-plot_gaus_vs_160.pdf Graphic file (type pdf)
-<use gfx/examples/qq-plot_gaus_vs_160.pdf>
-Package pdftex.def Info: gfx/examples/qq-plot_gaus_vs_160.pdf  used on input line 83.
-(pdftex.def)             Requested size: 166.49887pt x 125.24336pt.
- [6 <./gfx/examples/setup.pdf>]
-File: gfx/examples/qq-plot_gaus_vs_160.pdf Graphic file (type pdf)
-<use gfx/examples/qq-plot_gaus_vs_160.pdf>
-Package pdftex.def Info: gfx/examples/qq-plot_gaus_vs_160.pdf  used on input line 96.
-(pdftex.def)             Requested size: 142.26378pt x 107.013pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[][]|\T1/pplj/m/n/10 Minipage-
- []
-
-File: gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf Graphic file (type pdf)
-<use gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf>
-Package pdftex.def Info: gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf  used on input line 101.
-(pdftex.def)             Requested size: 142.26378pt x 106.69547pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 102--102
-[][]|\T1/pplj/m/n/10 Minipage-
- []
-
-[7 <./gfx/examples/qq-plot_gaus_vs_160.pdf> <./gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf>] [8]
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmss' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
- [9]) [10]
+]
 \openout2 = `frontbackmatter/Bibliography.aux'.
 
- (./frontbackmatter/Bibliography.tex) [11
+ (./frontbackmatter/Bibliography.tex
+Overfull \hbox (3.45724pt too wide) in paragraph at lines 15--15
+[]\T1/pplj/m/n/10.95 Gunter Dueck. \T1/pplj/m/it/10.95 Dueck's Trilo-gie 2.1: Om-niso-phie -- Supra-manie -- Topoth-
+ []
+
+) [7
 
 
 
@@ -1512,7 +1459,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 
 
-] (./thesis.aux (./frontbackmatter/Titlepage.aux) (./frontbackmatter/Titleback.aux) (./frontbackmatter/Declaration.aux) (./frontbackmatter/Abstract.aux) (./frontbackmatter/Contents.aux) (./frontbackmatter/Acronyms.aux) (./chapters/examples/chapter01.aux) (./chapters/examples/chapter02.aux) (./chapters/examples/chapter03.aux) (./frontbackmatter/Bibliography.aux))
+] (./thesis.aux (./frontbackmatter/Titlepage.aux) (./frontbackmatter/Titleback.aux) (./frontbackmatter/Declaration.aux) (./frontbackmatter/Abstract.aux) (./frontbackmatter/Contents.aux) (./frontbackmatter/Acronyms.aux) (./chapters/examples/chapter01.aux) (./frontbackmatter/Bibliography.aux))
 
  *File List*
  silence.sty    2012/07/02 v1.5b Selective filtering of warnings and error messages
@@ -1528,10 +1475,10 @@ scrsize11pt.clo    2022/10/12 v3.38 KOMA-Script font size class option (11pt)
 typearea.sty    2022/10/12 v3.38 KOMA-Script package (type area)
 fernuni-hagen-thesis-config.tex
    babel.sty    2023/02/13 3.86 The Babel package
- ngerman.ldf    2021/02/27 v2.13 German support for babel (post-1996 orthography)
 american.ldf    2017/06/06 v3.3r English support from the babel system
-babel-american.tex
+ ngerman.ldf    2021/02/27 v2.13 German support for babel (post-1996 orthography)
 babel-ngerman.tex
+babel-american.tex
 classicthesis-config.tex
 inputenc.sty    2021/02/14 v1.3d Input encoding file
 csquotes.sty    2022-09-14 v5.2n context-sensitive quotations (JAW)
@@ -1664,10 +1611,10 @@ titlesec.sty    2021/07/05 v2.14 Sectioning titles
  tocloft.sty    2017/08/31 v2.3i parameterised ToC, etc., typesetting
  scrtime.sty    2022/10/12 v3.38 KOMA-Script package (time of LaTeX run)
   t1pplj.fd    2004/09/06 font definitions for T1/pplj.
- english.lbx    2023/03/05 v3.19 biblatex localization (PK/MW)
-american.lbx    2023/03/05 v3.19 biblatex localization (PK/MW)
   german.lbx    2023/03/05 v3.19 biblatex localization (PK/MW)
  ngerman.lbx    2023/03/05 v3.19 biblatex localization (PK/MW)
+ english.lbx    2023/03/05 v3.19 biblatex localization (PK/MW)
+american.lbx    2023/03/05 v3.19 biblatex localization (PK/MW)
   thesis.bbl
 supp-pdf.mkii
 epstopdf-base.sty    2020-01-24 v2.11 Base part for package epstopdf
@@ -1694,19 +1641,9 @@ frontbackmatter/Titleback.tex
  ts1pplj.fd    2004/09/06 font definitions for TS1/pplj.
 frontbackmatter/Declaration.tex
 frontbackmatter/Abstract.tex
-   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
 frontbackmatter/Contents.tex
 frontbackmatter/Acronyms.tex
 chapters/examples/chapter01.tex
-chapters/examples/chapter02.tex
-chapters/examples/chapter03.tex
-gfx/examples/setup.pdf
-gfx/examples/qq-plot_gaus_vs_160.pdf
-gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf
-gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf
-gfx/examples/qq-plot_gaus_vs_160.pdf
-gfx/examples/qq-plot_gaus_vs_160.pdf
-gfx/examples/pdf_gaus_vs_uni_vs_10_40_160.pdf
 frontbackmatter/Bibliography.tex
  ***********
 
@@ -1717,18 +1654,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33261 strings out of 476025
- 635819 string characters out of 5790016
- 1869388 words of memory out of 5000000
- 52967 multiletter control sequences out of 15000+600000
- 596059 words of font info for 156 fonts, out of 8000000 for 9000
+ 32944 strings out of 476025
+ 627684 string characters out of 5790016
+ 1864388 words of memory out of 5000000
+ 52741 multiletter control sequences out of 15000+600000
+ 570976 words of font info for 117 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,23n,121p,10645b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (17 pages, 276123 bytes).
+ 108i,20n,106p,10645b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (13 pages, 107108 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 19173 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 198 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 14462 words of extra memory for PDF output out of 17280 (max. 10000000)
 

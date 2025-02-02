@@ -6,17 +6,42 @@
 
 \begin{otherlanguage}{american}
 	\chapter*{Abstract}
-	A short summary of the contents of about one page. The following points should be addressed in particular:
-	\begin{itemize}
-		\item Motivation: Why did this work come about? Why is the topic of the work interesting (for the general public)? The motivation should be abstracted as far as possible from the specific tasks that may be given by a company.
-		\item Content: What is the content of this thesis? What exactly is covered in the thesis? The methodology and working method should be briefly discussed here.
-		\item Results: What are the results of this work? A brief overview of the most important results as a teaser to read the complete thesis.
-	\end{itemize}
-	\medskip
-	
+	In der vorliegenden Masterarbeit wird das Thema Dynamische Allokation von Datasets zu 
+	Datastores behandlet.
+	Die Motivation für die Arbeit ist es, einen Vorschlag zu unterbreiten, wie in einem Umfeld aus 
+	heterogenen Datasets, für die mehr als ein Datenbank-System ideal ist, eine
+	dynamische Zuweisung und Neuzuweisung von Datasets zu Datastores zu realisieren.
+	In der Vergangenheit wurde bereits viel an dem Themenbereich Polystores geforscht.
+	Polystores beinhalten mindestens zwei verschiedenartige Datastores also letztendlich
+	Datenbank-Systeme um hetoregene Datasets, zum Beispiel transaktionsbasierte Daten auf der
+	einen Seite und aggregierte Daten für die Analyse von zum Beispiel sogenannten Key Perfomance
+	Indikatoren (KPI) auf der anderen Seite optimal verarbeiten zu können.
+	Eine bislang ungelöste Herausforderung in einem polystoren Umfeld ist, die Reaktion auf sich 
+	verändernde Workloads in der Applikaton bzw. im Gesamtsystem. Wie reagiert man bezogen auf das oben genannte Beispiel, wenn in dem 
+	transaktionsbasierten Bereich des Gesamtsystems vermehrt analytische 
+	Abfragen entstehen, also GET Requests mit langen und sehr langen Laufzeiten. Dann wäre 
+	es wünschenswert, dass diese Abfragen zukünftig über den Datastore, der sich auf 
+	analytische Abfragen fokussiert, umgeleitet werden. \newline
+
 	\noindent
-	BTW: A great guide by Kent Beck how to write good abstracts can be found here:
-	\begin{center}
-		\url{https://plg.uwaterloo.ca/~migod/research/beckOOPSLA.html}
-	\end{center}
+	Genau hier setzt die vorligende Arbeit an. Es soll ein Vorschlag unterbreitet werden, wie man 
+	in einem polystoren Systemumfeld, dynamisch auf sich verändernde Workloads reagieren kann.
+	Der erste Schwerpunkt beschäftig sich damit, bezogen auf gegebene Anforderungen an 
+	ein Gesamtsystem eine initiale Zuweisung von Datasets zu Datastores vorzuschlagen.
+	Es wird ein Prototyp entwickelt, der algorithmisch eine entsprechende Zuweisung ermittelt.
+	Der zweite Schwerpunkt fokussiert sich auf die permanante und dynamische Analyse von Workloads
+	um bei sich verändernden Paramtern bezogen auf den initialen Zustand mit einer Re-Allokation
+	der Datasets zu reagieren bzw. einen angepassten Vorschlag zu unterbreiten.  Für diesen 
+	zweiten Schwerpunkt wird ebenfalls ein Prototyp entwickelt, der als Input die Analysedaten 
+	des Workloads erhält, und beim Erreichen bestimmter Schwellwerte einen Vorschlag für eine Neuzuweisung
+	unterbreitet. 
+	Für die konkrete Ausführung der angepassten Zuweisungen wird ein theoretischer Vorschlag gemacht und diskutiert.\newline
+
+	\noindent
+	Die Arbeit schließt wiederum mit einer Zusammenfassung der Ergebnisse bezogen auf die Ausführung
+	und Testung der Prototypen.
+	Darüber hinaus sollen Vorschläge unterbereitet werden, an welchen Themen noch gearbeitet werden sollte,
+	um tatsächlich ein komplett autonom arbeitendes Gesamtsystem auf der Basis von Polystores zu realisieren.
+
+
 \end{otherlanguage}
