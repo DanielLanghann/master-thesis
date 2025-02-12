@@ -5,17 +5,136 @@
 
 \chapter{Einleitung}
 \label{ch:intro}
-Lorem ipsum at nusquam appellantur his, labitur bonorum pri no \citep{dueck:trio}. His no decore nemore graecis. In eos meis nominavi, liber soluta vim cu. Sea commune suavitate interpretaris eu, vix eu libris efficiantur.
+Das Thema Polystores ist bereits seit mehr als zehn Jahren Gegenstand aktiver Forschung. 
+Dies ist relativ einfach damit zu begründen, dass die digitale Welt immer vielschichiger und komplexer wird.
+Die Menge an zu verarbeitenden Daten steigt immer weiter. Wo es früher Ziel war, Datenbank Konzepte
+zu entwerfen und zu implementieren, die möglichst sparsam mit der knappen Ressource Speicherplatz
+umgehen, liegt heute der Fokus tendenziell auf Performance.
+Empfehlungs-Systeme müssen in der Lage sein in Echtzeit oder sehr schnell auf Basis von Inputs
+sinnvolle Vorschläge zum Beispiel im Kontext If a customer $\mathbf{C}$ bought item $\mathbf{A}$, then they also bought item $\mathbf{B}$ or item $\mathbf{C}$ or $\ldots$
+:
+\[
+\forall c \in \mathcal{C} \quad \Bigl( \text{Bought}(c, A) \implies \bigl( \text{Bought}(c, B) \lor \text{Bought}(c, C) \lor \cdots \bigr) \Bigr)
+\]
+Ein solche Anfrage kann nur sinnvoll und performant beantwortet werden, 
+wenn ein entsprechender Algorithmus sehr schnell Input von einer geeigneten
+Datenbank erhält. Eine solche Datenbank, kann zum Beispiel eine Graph-Datenbank sein.
+In zum Beispiel einem Web-Shop, wo ein solches Empfehlungs-System implementiert ist, entstehen
+häufig auch typische Datenbank Transaktionen sog. Create, Read, Update, Delete Operationen (CRUD).
+Solche Transaktionen können wiederum tendenziell besser über eine klassiche SQL Datenbank 
+abgewickelt werden.
+Eine solches System kann als ein Polystore bezeichnet werden, da es, um performant zu funktionieren,
+mindestens zwei verschiedene Datenbank-Systeme bzw. Data-Stores benötigt.
+Teilweise sind die Übergänge fließender als in dem oben genannten Beispiel des E-Commerce Systems 
+mit einer Datenbank für die Empfehlungs-Engine und einer Datenbank für den transaktionsbasierten 
+Teil des Systems.
+So lassen sich zum Beispiel so genannte Datenströme genau so gut in eine zum Beispiel
+dokumentenbasierte Datenbank abwickeln wie klassiche CRUD Operationen. Es wäre denkbar, dass beide
+Teile eines fiktiven Systems über zum Beispiel eine MongoDB abgebildet werden.
+Hier wäre es sinnvoll zu messen ob ein System welches aus zwei oder mehr verschiedenen Services besteht,
+die sich einen Datastore bzw. ein Datenbank System teilen, bei einem sich dynamisch ändernden Workload,
+eine Neuzzuteilung Service bzw. Dataset zu Datastore sinnvoll ist. Dies kann zum Beispiel sinnvoll sein,
+wenn bestimmte Transaktionen oder Commits immer mehr Zeit in Anspruch nehmen, was sich wiederum
+negativ auf die Benutzererfahrung bzw. die Performance des Systems auswirkt.
+Grundsätzlich geht es also darum, dass in einem System S mindestens zwei verschiedene Services
+S existieren,
+die jeweils einem Datastore D zugeordnet sind und einen gewissen Workload W aufweisen. 
+Ändert sich der Workload W bzw. werden bestimmte Grenzwerte Th überschritten, sollten die Services
+bzw. der betroffene Service einem anderen, gegebenfalls besser geeigneten Datastore zugeordnet werden.
+Dies sollte nur passieren, wenn der Service S in Verbindung mit dem neu zugewiesenen Datastore
+einen verbesserten Workload aufweist.
+Grundsätzlich kann der vorbezeichnete Sachverhalt wie folgt beschrieben werden:
+\section*{Service Reassignment Based on Workload}
 
+We define the following:
+
+\begin{itemize}
+    \item \textbf{Services:} 
+    \[
+    \mathcal{S} = \{ S_1, S_2, \ldots, S_n \} \quad (n \geq 2)
+    \]
+    \item \textbf{Datastores:} 
+    \[
+    \mathcal{D} = \{ D_1, D_2, \ldots, D_m \}.
+    \]
+    \item \textbf{Workload Function:} 
+    \[
+    W: \mathcal{S} \times \mathcal{D} \to \mathbb{R}_{\ge0},
+    \]
+    where \(W(S,D)\) measures the workload of service \(S\) when using datastore \(D\) (lower is better).
+    \item \textbf{Thresholds:} Let \(Th \ge 0\) be the workload threshold, and let \(\epsilon > 0\) be a parameter defining a significant change in workload over time.
+\end{itemize}
+
+Let \(A: \mathcal{S} \to \mathcal{D}\) be the current assignment function, meaning that a service \(S\) is assigned to a datastore \(A(S)\).
+
+For a given service \(S\), if either:
+\[
+\bigl|W(S, A(S))_t - W(S, A(S))_{t-1}\bigr| \ge \epsilon
+\]
+or
+\[
+W(S, A(S)) \ge Th,
+\]
+and there exists another datastore \(D' \in \mathcal{D}\) such that:
+\[
+W(S, D') < W(S, A(S)),
+\]
+then we reassign service \(S\) to \(D'\).
+
+This rule can be written as:
+\[
+A'(S) =
+\begin{cases}
+D', & \text{if } \left( \bigl|W(S, A(S))_t - W(S, A(S))_{t-1}\bigr| \ge \epsilon \text{ or } W(S, A(S)) \ge Th \right) \\
+    & \quad \text{and there exists } D' \in \mathcal{D} \text{ with } W(S, D') < W(S, A(S)); \\[1ex]
+A(S), & \text{otherwise.}
+\end{cases}
+\]
+Es gilt also permanent zu überprüfen wie ein System aus Datasets bzw. 
+Services und Datastores aufgebaut sein sollte um die Anforderungen 
+an dieses System optimal zu erfüllen. Genau diesem Thema widmet sich die forliegende Arbeit.
 %
 % Section: Motiva
 %
 \section{Motivation}
 \label{sec:intro:motivation}
-\graffito{Note: The content of this chapter is just some dummy text. It is not a real language.}
-Illo principalmente su nos. Non message \emph{occidental} angloromanic da. Debitas effortio simplificate sia se, auxiliar summarios da que, se avantiate publicationes via. Pan in terra summarios, capital interlingua se que. Al via multo esser specimen, campo responder que da. Le usate medical addresses pro, europa origine sanctificate nos se.
+Es existieren bislang nur wenig bis gar keine polystoren Systeme die es über den Status Prototyp
+geschafft haben. Das Projet was wohl am fortgeschrittensten ist ist Polyphenie DB.
+Ein Erklärungsansatz für den mangelhafte Verbreitung von Polystore Systemen und oder deren 
+produktiven Einsatz ist, dass die Implmentierung immer noch schwierig und aufwendig ist.
 
-Cras , leo ac adipiscing adipiscing, erat justo vulputate arcu, non sollicitudin ipsum dolor eget lectus. Nulla sed mi non ipsum varius consequat sit amet nec ipsum. Donec ac elit id nibh pretium pulvinar non ut ipsum. Integer congue iaculis augue ac porttitor. Suspendisse sed enim ac eros hendrerit adipiscing. Integer elit libero, lacinia vitae pharetra a, ullamcorper vitae metus. In tempor, est id imperdiet pulvinar, tellus nibh lacinia diam, a eleifend dui lectus non turpis.
+Ein anderer Erklärungsansatz ist, dass die Vorteile eines Polystores erst zum tragen 
+kommen, wenn dieses in einem dynamischen Umfeld bzw. System zum Einsatz kommt. In einem dynamischen
+Umfeld ändert sich der Workload und damit ist wie bereits beschrieben die initiale oder 
+aktuelle Zuordnung von Datastores zu Datasets nicht mehr valide bzw. optimal.
+
+Nun ist es schwer vorstellbar, dass in einem produktiven Betrieb permanent manuell Datasets
+anderen Datenbanken und Datenbank Systemen zugeordnet werden. Ein solcher Eingriff ist komplex,
+erfordert eine sorgfältige Vorbereitung und beansprucht in den meisten Fällen einen 
+nicht unerheblichen Teil der Ressourcen (insbesondere Personal wie Datenbank Administratoren und 
+Backend-Entwickler etc.). Des weiteren geht mit einer solchen Umstellung ein nicht
+zu unterschätendes Risiko einher. Dieses Risiko kann durch bestimmte Verfahren wie das Testen 
+der Umstellung in einer gekapselten Testumgebung, einer schrittweisen Umstellung etc. minimiert 
+werden, dennoch sind Anpassungen am Datenmodell bzw. an der Persistenz-Schicht eines Systems immer heikel
+und unterliegen häufig einem sehr statischen Setup.
+
+Des Weiteren stellt sich immer die Frage wenn festgestellt wird, dass eine Zuordnung Datasets zu 
+Datastores nicht mehr optimal ist, was die bessere Lösung wäre und wie sich der Workload durch eine 
+Unmstellung potentiell verändern würde. Eine manuelle Überprüfung der Workloads ist zwar denkbar aber schwer
+mit dem Alltag von Entwicklungs-Teams vereinbar. 
+Wenn man feststellt, dass die Performance aber auch andere parameter wie Verfügbarkeit, also letztendlich
+Service Level Agreements (SLA) nicht mehr den Anforderungen entsprechen, stellt sich die Frage, wie 
+das System umgestellt werden sollte oder umgestellt werden kann um die Anforderungen wieder 
+zu erfüllen.
+
+Die weiterführende Vision bzw. Motivation dieser Arbeit ist, eine Polystore System welches auf Basis
+von Workloads, Applikationsparametern und SLA automatisch eine initial Zuordnung von Datasets zu Datastores vornimmt
+und dieses Setup kontinuierlich und automatisiert überwacht und im Fall von Abweichungen 
+sich selbst optimiert. Ein solches System wäre gerade für komplexe Anwendungen mit heterogenen Anforderungen
+an die entsprechenden Datastores ein Mehrwert und trägt der Erkenntnis Rechnung 
+das im Bereich Datastores und Datenbank eine One Fits All Lösung nicht bzw. bislang niht existiert.
+So entsteht für den Benutzer ein optimiertes Nutzererlebnis und das Entwicklungs-Team kann sich voll 
+auf die Implmentierung von User Interfaces und Business Logik fokussieren.
 
 %
 % Section: Ziele

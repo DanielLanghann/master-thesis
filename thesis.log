@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  2 FEB 2025 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  12 FEB 2025 14:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1403,11 +1403,26 @@ Package microtype Info: Character `029' is missing
 
  (./chapters/examples/chapter01.tex
 Chapter 1.
-Package acronym Info: Label `acro:UML' newly defined as it shall be overridden
-although it is yet undefined on input line 25.
-Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 32.
-Chapter 2.
+
+Overfull \hbox (6.37283pt too wide) in paragraph at lines 18--47
+\T1/pplj/m/n/10.95 wenn ein entsprechen-der Al-go-rith-mus sehr schnell In-put von einer geeigneten
+ []
+
+
+Overfull \hbox (14.07802pt too wide) in paragraph at lines 18--47
+\T1/pplj/m/n/10.95 Datenbank sein. In zum Beispiel einem Web-Shop, wo ein solches Empfehlungs-
+ []
+
+
+Overfull \hbox (2.38701pt too wide) in paragraph at lines 18--47
+\T1/pplj/m/n/10.95 System im-ple-men-tiert ist, entste-hen häu-fig auch typ-is-che Daten-bank Transak-
+ []
+
+
+Overfull \hbox (9.85121pt too wide) in paragraph at lines 18--47
+\T1/pplj/m/n/10.95 tio-nen sog. Cre-ate, Read, Up-date, Delete Op-er-a-tio-nen (CRUD). Solche Transak-
+ []
+
 [1
 
 
@@ -1421,45 +1436,52 @@ Chapter 2.
 
 
 ]
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 62.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+)
+Overfull \hbox (15.92113pt too wide) detected at line 92
+ $\OML/zplm/m/it/10.95 A[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 S\OT1/zplm/m/n/10.95 ) = []$ 
+ []
+
+[2] [3]
+Package acronym Info: Label `acro:UML' newly defined as it shall be overridden
+although it is yet undefined on input line 144.
+Package acronym Info: Label `acro:API' newly defined as it shall be overridden
+although it is yet undefined on input line 151.
+
+Chapter 2.
+[4]
 Chapter 3.
-[2
+[5
 
 
 ]
 Chapter 4.
-[3
+[6
 
 
 ]
 Chapter 5.
-[4
+[7
 
 
 ]
 Chapter 6.
-[5
+[8
 
 
-]) [6
+]) [9
 
 
 ]
 \openout2 = `frontbackmatter/Bibliography.aux'.
 
  (./frontbackmatter/Bibliography.tex
-Overfull \hbox (3.45724pt too wide) in paragraph at lines 15--15
-[]\T1/pplj/m/n/10.95 Gunter Dueck. \T1/pplj/m/it/10.95 Dueck's Trilo-gie 2.1: Om-niso-phie -- Supra-manie -- Topoth-
- []
 
-) [7
+LaTeX Warning: Empty bibliography on input line 15.
 
-
-
-
-
-
-
-] (./thesis.aux (./frontbackmatter/Titlepage.aux) (./frontbackmatter/Titleback.aux) (./frontbackmatter/Declaration.aux) (./frontbackmatter/Abstract.aux) (./frontbackmatter/Contents.aux) (./frontbackmatter/Acronyms.aux) (./chapters/examples/chapter01.aux) (./frontbackmatter/Bibliography.aux))
+) (./thesis.aux (./frontbackmatter/Titlepage.aux) (./frontbackmatter/Titleback.aux) (./frontbackmatter/Declaration.aux) (./frontbackmatter/Abstract.aux) (./frontbackmatter/Contents.aux) (./frontbackmatter/Acronyms.aux) (./chapters/examples/chapter01.aux) (./frontbackmatter/Bibliography.aux))
 
  *File List*
  silence.sty    2012/07/02 v1.5b Selective filtering of warnings and error messages
@@ -1644,6 +1666,7 @@ frontbackmatter/Abstract.tex
 frontbackmatter/Contents.tex
 frontbackmatter/Acronyms.tex
 chapters/examples/chapter01.tex
+ ufplmbb.fd    2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 frontbackmatter/Bibliography.tex
  ***********
 
@@ -1654,18 +1677,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32944 strings out of 476025
- 627684 string characters out of 5790016
- 1864388 words of memory out of 5000000
- 52741 multiletter control sequences out of 15000+600000
- 570976 words of font info for 117 fonts, out of 8000000 for 9000
+ 32813 strings out of 476025
+ 625051 string characters out of 5790016
+ 1865388 words of memory out of 5000000
+ 52585 multiletter control sequences out of 15000+600000
+ 587721 words of font info for 147 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 108i,20n,106p,10645b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (13 pages, 107108 bytes).
+ 108i,22n,124p,10645b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (15 pages, 159421 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
+ 229 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  37 named destinations out of 1000 (max. 500000)
- 14462 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 18038 words of extra memory for PDF output out of 20736 (max. 10000000)
 

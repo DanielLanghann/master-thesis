@@ -16,31 +16,5 @@
   {}
 \endgroup
 
-\datalist[entry]{nyt/global//global/global}
-  \entry{dueck:trio}{book}{}
-    \name{author}{1}{}{%
-      {{hash=DG}{%
-         family={Dueck},
-         familyi={D\bibinitperiod},
-         given={Gunter},
-         giveni={G\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Springer}%
-    }
-    \strng{namehash}{DG1}
-    \strng{fullhash}{DG1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Due13}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{title}{{D}ueck's {T}rilogie 2.1: {O}mnisophie -- {S}upramanie -- {T}opothesie}
-    \list{location}{1}{%
-      {Berlin, Germany}%
-    }
-    \field{year}{2013}
-  \endentry
-\enddatalist
+\datalist[entry]{nyt/global//global/global}\enddatalist
 \endinput
