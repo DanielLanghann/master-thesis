@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  3 MAR 2025 10:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  3 MAR 2025 12:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1110,7 +1110,11 @@ Package csquotes Info: Redefining alias 'default' -> 'ngerman'.
 LaTeX Font Info:    Trying to load font information for T1+pplj on input line 60.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
-) (./thesis.aux (./frontbackmatter/Titlepage.aux) (./frontbackmatter/Titleback.aux) (./frontbackmatter/Declaration.aux) (./frontbackmatter/Abstract.aux) (./frontbackmatter/Contents.aux) (./frontbackmatter/Acronyms.aux) (./chapters/examples/chapter01.aux) (./frontbackmatter/Bibliography.aux))
+) (./thesis.aux (./frontbackmatter/Titlepage.aux) (./frontbackmatter/Titleback.aux) (./frontbackmatter/Declaration.aux) (./frontbackmatter/Abstract.aux) (./frontbackmatter/Contents.aux) (./frontbackmatter/Acronyms.aux) (./chapters/examples/chapter01.aux
+
+LaTeX Warning: Label `fig:multistore' multiply defined.
+
+) (./frontbackmatter/Bibliography.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -1477,26 +1481,76 @@ Overfull \hbox (14.85544pt too wide) in paragraph at lines 178--183
 [4]
 Chapter 2.
 [5]
-Chapter 3.
+Underfull \hbox (badness 10000) in paragraph at lines 212--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--219
+
+ []
+
+
+Overfull \hbox (8.90225pt too wide) in paragraph at lines 212--219
+\T1/pplj/m/n/10.95 Metadata: Of-ten ac-com-pa-nied by meta-data that de-scribes the struc-ture, source,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
 [6
 
 
 ]
+<gfx/examples/master_thesis-multistore.png, id=99, 382.42876pt x 312.16624pt>
+File: gfx/examples/master_thesis-multistore.png Graphic file (type png)
+<use gfx/examples/master_thesis-multistore.png>
+Package pdftex.def Info: gfx/examples/master_thesis-multistore.png  used on input line 251.
+(pdftex.def)             Requested size: 222.00226pt x 181.21373pt.
+
+Overfull \hbox (21.9327pt too wide) in paragraph at lines 257--260
+[]\T1/pplj/m/n/10.95 Polystore Ein Poly-store wiederum bi-etet ver-schiedene öf-fentliche Schnittstellen
+ []
+
+<gfx/examples/master_thesis-polystore.png, id=101, 451.6875pt x 312.16624pt>
+File: gfx/examples/master_thesis-polystore.png Graphic file (type png)
+<use gfx/examples/master_thesis-polystore.png>
+Package pdftex.def Info: gfx/examples/master_thesis-polystore.png  used on input line 263.
+(pdftex.def)             Requested size: 222.00226pt x 153.4296pt.
+Chapter 3.
+[7 <./gfx/examples/master_thesis-multistore.png> <./gfx/examples/master_thesis-polystore.png>]
 Chapter 4.
-[7
-
-
-]
-Chapter 5.
 [8
 
 
 ]
-Chapter 6.
+Chapter 5.
 [9
 
 
-]) [10
+]
+Chapter 6.
+[10
+
+
+]) [11
 
 
 ]
@@ -1692,8 +1746,13 @@ frontbackmatter/Contents.tex
 frontbackmatter/Acronyms.tex
 chapters/examples/chapter01.tex
  ufplmbb.fd    2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+gfx/examples/master_thesis-multistore.png
+gfx/examples/master_thesis-polystore.png
 frontbackmatter/Bibliography.tex
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
@@ -1702,18 +1761,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32800 strings out of 476025
- 624926 string characters out of 5790016
+ 32831 strings out of 476025
+ 625860 string characters out of 5790016
  1865388 words of memory out of 5000000
- 52578 multiletter control sequences out of 15000+600000
+ 52602 multiletter control sequences out of 15000+600000
  585947 words of font info for 144 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,124p,10645b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (16 pages, 161520 bytes).
+Output written on thesis.pdf (17 pages, 184123 bytes).
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 18038 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 18048 words of extra memory for PDF output out of 20736 (max. 10000000)
 

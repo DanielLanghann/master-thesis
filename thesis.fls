@@ -1804,6 +1804,16 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT ./gfx/examples/master_thesis-multistore.png
+INPUT ./gfx/examples/master_thesis-multistore.png
+INPUT gfx/examples/master_thesis-multistore.png
+INPUT ./gfx/examples/master_thesis-multistore.png
+INPUT ./gfx/examples/master_thesis-multistore.png
+INPUT ./gfx/examples/master_thesis-polystore.png
+INPUT ./gfx/examples/master_thesis-polystore.png
+INPUT gfx/examples/master_thesis-polystore.png
+INPUT ./gfx/examples/master_thesis-polystore.png
+INPUT ./gfx/examples/master_thesis-polystore.png
 INPUT ./frontbackmatter/Bibliography.tex
 INPUT ./frontbackmatter/Bibliography.tex
 INPUT ./frontbackmatter/Bibliography.tex

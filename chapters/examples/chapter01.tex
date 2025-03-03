@@ -219,7 +219,7 @@ Storage: May be stored in various datastores such as databases, file systems, or
 
 Datastore
 
-A datastore is a system or repository designed for the storage, management, and retrieval of data, including datasets and other data objects. In the context of datasets and datastores:
+A datastore is a system or repsitory designed for the storage, management, and retrieval of data, including datasets and other data objects. In the context of datasets and datastores:
 
 Storage Mechanism: A datastore provides the underlying nfrastructure to physically or logically store data. This can be implemented as a database, file system, data warehouse, or cloud storage service\newline
 \\
@@ -227,12 +227,44 @@ Storage Mechanism: A datastore provides the underlying nfrastructure to physical
 \\
     Data Integrity and Security: Datastores often include mechanisms for ensuring data accuracy, consistency, and protection against unauthorized access.
 \\
-    Scalability: They are built to handle varying amounts of data, supporting growth and high performance as data volume increases.
+    Scalability: They are built t handle varying amounts of data, supporting growth and high performance as data volume increases.
 \\
 
 Datasets and Datastores\\
 
-In summary, while a dataset is the structured collection of data used for analysis or processing, a datastore is the system that houses and manages these datasets, ensuring that data is organized, accessible, and secure.
+In summary, while a dataset is the structured collection of data used for analysis or processing, 
+a datastore is the system that houses and manages these datasets, ensuring that data is organized, accessible, and secure.
+
+Nach dem die grundsätzlichen Begriffe Datasets und Datastores geklärt sind, werden die beiden Begriffe Mulltistore und 
+Polystore definiert und voneinander abgegrenzt. Beide Konzepte honorieren, dass eine One Size fits all Lösung für 
+verschiedenartige Datassets nicht existiert und pro Dataset er jeweils best passende Datastore genutzt werden sollte.
+
+
+Multistore
+
+Ein Multistore besteht aus einer einzigen öffentlichen Schnittstelle und übersetzt die Anfragen an diese 
+Schnittstelle zu Query Interface der verschiedenen und verschiedenartigen Datastores Dij wobei i den jeweiligen Datastore
+identifiziert und j den Typ des Datastores abbildet:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.60\textwidth]{gfx/examples/master_thesis-multistore.png}
+    \caption{Concept of a Multistore}
+    \label{fig:multistore}
+\end{figure} 
+
+
+Polystore
+Ein Polystore wiederum bietet verschiedene öffentliche Schnittstellen Q1,...,QN und leitet die Anfragen an die entsprechenden 
+Datastores 1,...,N weiter.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.60\textwidth]{gfx/examples/master_thesis-polystore.png}
+    \caption{Concept of a Multistore}
+    \label{fig:multistore}
+\end{figure} 
+
 %*************************************************************************
 % Chapter 3
 %*************************************************************************
