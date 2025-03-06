@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  3 MAR 2025 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  6 MAR 2025 11:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1515,21 +1515,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
+
+Overfull \hbox (2.11325pt too wide) in paragraph at lines 238--241
+\T1/pplj/m/n/10.95 sind, wer-den die bei-den Be-griffe Mullti-store und Poly-glot Per-sis-tenz definiert
+ []
+
 [6
 
 
 ]
-<gfx/examples/master_thesis-multistore.png, id=99, 382.42876pt x 312.16624pt>
+<gfx/examples/master_thesis-multistore.png, id=101, 382.42876pt x 312.16624pt>
 File: gfx/examples/master_thesis-multistore.png Graphic file (type png)
 <use gfx/examples/master_thesis-multistore.png>
 Package pdftex.def Info: gfx/examples/master_thesis-multistore.png  used on input line 251.
 (pdftex.def)             Requested size: 222.00226pt x 181.21373pt.
 
-Overfull \hbox (21.9327pt too wide) in paragraph at lines 257--260
-[]\T1/pplj/m/n/10.95 Polystore Ein Poly-store wiederum bi-etet ver-schiedene öf-fentliche Schnittstellen
+Overfull \hbox (0.59117pt too wide) in paragraph at lines 257--260
+[]\T1/pplj/m/n/10.95 Polyglot Per-sis-tenz Ein Poly-store wiederum bi-etet ver-schiedene öf-fentliche
  []
 
-<gfx/examples/master_thesis-polystore.png, id=101, 451.6875pt x 312.16624pt>
+<gfx/examples/master_thesis-polystore.png, id=103, 451.6875pt x 312.16624pt>
 File: gfx/examples/master_thesis-polystore.png Graphic file (type png)
 <use gfx/examples/master_thesis-polystore.png>
 Package pdftex.def Info: gfx/examples/master_thesis-polystore.png  used on input line 263.
@@ -1761,18 +1766,18 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32831 strings out of 476025
- 625860 string characters out of 5790016
+ 32834 strings out of 476025
+ 625892 string characters out of 5790016
  1865388 words of memory out of 5000000
- 52602 multiletter control sequences out of 15000+600000
+ 52604 multiletter control sequences out of 15000+600000
  585947 words of font info for 144 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,124p,10645b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (17 pages, 184123 bytes).
+Output written on thesis.pdf (17 pages, 185186 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 18048 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 18056 words of extra memory for PDF output out of 20736 (max. 10000000)
 

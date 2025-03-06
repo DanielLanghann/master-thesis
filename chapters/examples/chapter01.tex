@@ -236,7 +236,7 @@ In summary, while a dataset is the structured collection of data used for analys
 a datastore is the system that houses and manages these datasets, ensuring that data is organized, accessible, and secure.
 
 Nach dem die grundsätzlichen Begriffe Datasets und Datastores geklärt sind, werden die beiden Begriffe Mulltistore und 
-Polystore definiert und voneinander abgegrenzt. Beide Konzepte honorieren, dass eine One Size fits all Lösung für 
+Polyglot Persistenz definiert und voneinander abgegrenzt. Beide Konzepte honorieren, dass eine One Size fits all Lösung für 
 verschiedenartige Datassets nicht existiert und pro Dataset er jeweils best passende Datastore genutzt werden sollte.
 
 
@@ -254,7 +254,7 @@ identifiziert und j den Typ des Datastores abbildet:
 \end{figure} 
 
 
-Polystore
+Polyglot Persistenz
 Ein Polystore wiederum bietet verschiedene öffentliche Schnittstellen Q1,...,QN und leitet die Anfragen an die entsprechenden 
 Datastores 1,...,N weiter.
 
@@ -265,11 +265,30 @@ Datastores 1,...,N weiter.
     \label{fig:multistore}
 \end{figure} 
 
+Polystore
+Ein Polystore ist eine Kombination aus Multistore und Polyglot Persistenz.
+
 %*************************************************************************
 % Chapter 3
 %*************************************************************************
 
-\chapter{Initial Zuordnung von Datasets zu Datastores}
+\chapter{Initiale Zuordnung von Datasets zu Datastores}
+
+Nach der Klärung wesentlicher Begriffe und Terminologien beginnt nun im Chapter3 der Hauptteil
+der Arbeit. Dieser beginnt mit der initialen Zuordnung von datasets zu Datastores.
+Es wird im weiteren von einem Zustand auf der so genannten grünen Wiese ausgegangen.
+Das heißt eine beliebige Applikation bzw. System wurde entwickelt und soll nun 
+deployed bzw. bereitgestellt werden. Hierfür ist es notwendig, dass die initiale
+Zuordnung von datasets zu datastores feststeht.
+Grundsätzlich ist also festzuhalten, dass der initale Zuordnungsprozess 
+optimalerweise in eine Deployment Pipeline eingebunden wird.
+Ein Vorteil dieser Vorgehensweise ist, dass die gemachte Zuordnung über ein 
+Staging-System getestet werden kann.
+
+\section{Initiale Zuordnung von Datassets zu Datastores}
+\label{sec:main:init}
+Some Text
+
 
 
 %*************************************************************************
