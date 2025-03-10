@@ -287,7 +287,106 @@ Staging-System getestet werden kann.
 
 \section{Initiale Zuordnung von Datassets zu Datastores}
 \label{sec:main:init}
-Some Text
+In diesem Kapitel wird der Arbeitsschritt des Programms die initiale Zuordnung von Datasets
+zu Datastores beschrieben. In Kapitel TODO wird der grundsätzliche Aufbau des Systems,
+referenzierend auf die Beschreibung aus Kapitel TODO beschrieben. \newline
+In Kapitel TODO wird der o.g. erste Arbeitsschritt praktisch beschrieben, also die 
+konkrete Implmentierung eines Programms für die intiale Zuordnung, eingebettet in das
+in dem vorangegangenen Kapitel TODO beschriebene Gesamtsystem.
+\newpage
+\subsection{Aufbau des Gesamtsystems}
+\label{subsec:main:init:system}
+Der Abbildung \ref{fig:architecture} ist der Aufbau des Gesamtsystems zu entnehmen:
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.60\textwidth]{gfx/examples/master_thesis-architecture.png}
+    \caption{System Architecture}
+    \label{fig:architecture}
+\end{figure} 
+
+Das Gesamtsystem bzw. dessen Architektur kann in verschiedene Module eingeteilt werden.
+\subsubsection{Dataset Analysis Module}
+\label{ssubsec:main:init:system:dam}
+Das erste Modul ist das Dataset Analysis Module (DAM). Das DAM (blaue Färbung in \ref{fig:architecture})
+hat die folgenden drei Hauptaufgaben:
+\begin{description}
+    \item[Feature Extraction:] Analyse von eigehenden Datasets um relevante Features zu extrahieren.
+    \item[Determine Datatypes:] Determines datatypes, structure, size, access patterns, query frequency. 
+    \item[Feature Vector:] Creation a of feature vector for each dataset. 
+\end{description}
+Zusammenfassend kann man sagen, dass das DAM Datassets als Input entgegennimmt und diese klassifiziert.
+\subsubsection{Datastore Profiler}
+\label{ssubsec:main:init:system:dp}
+Das nächte Modul ist der Datastore Profiler (DP, oranger Bereich in \ref{fig:architecture}). Die Hauptaufgaben des DP sind die folgenden:
+\begin{description}
+    \item[Katalogisierung von Datastores:] Catalogs available datastores with their capabilities.
+    \item[Performance Messung:] Measures performance characteristics for different data types
+    \item[Datastore Capability Matrix:] Creation and maintenance of Capability Matrix for each Datastore. 
+\end{description}
+Zusammenfassend ist der DP dafür verantwortlich alle verfügbaren Datastores zu katalogisieren und 
+eine Matrix zu erstellen und zu warten, derer man die entsprechenden Fähigkeiten aber auch 
+umgekehrt auch deren Limitationen entnehmen kann.
+
+\subsubsection{Dynamic Reassignment Module}
+\label{ssubsec:main:init:system:drm}
+
+Das Dynamic Reassignment Module (DRM, roter Bereich in \ref{fig:architecture}) monitort das zugrunde liegende Gesamtsystem 
+aus Datasets und Datastores.
+Als Input erhält das DRM System Conditions und Performance Metrics.
+Auf Basis des oben genannten Inputs werden Veränderungen dedektiert und reassignment getriggert, werden entsprechende
+Grenzwerte über- oder unterschritten werden. 
+Kompakt sind die drei Hauptfunktionen des DRM die folgenden
+\begin{description}
+    \item[System Monitoring:] Monitoring of system conditions and performance metrics.
+    \item[Change Detection:] Detection of changes that warrant reassignment, based in thresholds.
+    \item[Datastore Capability Matrix:] Triggers reassignments with minimal disruption. 
+\end{description}
+
+\subsubsection{AI Matching Engine}
+\label{ssubsec:main:init:system:ame}
+Das dritte Modul ist die AI Matching Engine (AME). Die AME ist dafür verantwortlich, 
+den Input aus dem DAM (\ref{ssubsec:main:init:system:ame}), dem DP (\ref{ssubsec:main:init:system:dp})
+und dem DRM (\ref{ssubsec:main:init:system:drm}) um Datassets zu Datastores zuzuordnen.
+
+\subsection{System Input parameters}
+\label{subsec:main:init:input}
+Nach dem die Architektur des Gesamtsystems im Kapitel \ref{subsec:main:init:system} erklärt wurde, sollen nun 
+für das System relevante Inputparamter beschrieben werden.
+
+\subsubsection{Dataset related Input}
+\label{ssubsec:main:init:input:dataset}
+
+Bezogen auf Datasets sind im wesentlichen die folgenden parameter von entscheidener Bedeutung:
+\begin{description}
+    \item[Data structure]: Cluster structured versus unstructured data and schema complexity.
+    \item[Size]: Current size and growth rate of the dataset.
+    \item[Access patterns]: Read-heavy versus write-heavy usage of the dataset.
+    \item[Query complexity]: Cluster simple lookups versus complex analytics.
+    \item[Consistency Requirements]: Cluster strong versus eventual consistency.
+    \item[Latency Requirements]: Evaluate the needed response time.
+    \item[Datas Relationships]: Check for connections to other datasets.        
+\end{description}
+Auf die einzelnen Inputs wird ab dem Kapitel TODO im Detail eingegangen. 
+Nach der Aufzählung der Dataset bezogenen Input parameter, werden nun die Input parameter
+bezogen auf Datastores aufgezählt.
+
+\subsubsection{Datastore related Input}
+\label{ssubsec:main:init:input:datastore}
+Für die Beurteilung ob ein Dataset mit entsprechenden Kriterien (Vergleiche Chapter \ref{ssubsec:main:init:input:dataset})
+zu einem potentiellen Datastore passt, ist eine hinreichende Beschreibung der Beschaffenheit und der characteristics
+der zur Verfügung stehenden Datastores erforderliche. Nachfolgend werden die Kriterien aufgezählt die in der 
+vorliegenden Arbeit Berücksichtigung finden. An dieser Stelle sei erwähnt, dass die Inputparameter für 
+Datassets (Chapter \ref{ssubsec:main:init:input:dataset}) aber auch die parameter bezogeb auf Datastores
+noch erweitert werden können.
+Datastore bezogenene für diese Arbeit relevante Inputparameter sind die folgenden:
+\begin{description}
+    \item[Type of Datastore]: A distinction is made between Relational, document, key-value, graph based datastores.
+    \item[Performance profile]: Evaluation of the datastore related speed characteristics.
+    \item[Cost model]: Storage and operation costs of the related datastore.
+    \item[Scalability]: Horizontal and vertical scaling capabilities of the related datastore.   
+\end{description}
+
 
 
 

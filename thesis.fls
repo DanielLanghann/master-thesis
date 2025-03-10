@@ -1814,6 +1814,11 @@ INPUT ./gfx/examples/master_thesis-polystore.png
 INPUT gfx/examples/master_thesis-polystore.png
 INPUT ./gfx/examples/master_thesis-polystore.png
 INPUT ./gfx/examples/master_thesis-polystore.png
+INPUT ./gfx/examples/master_thesis-architecture.png
+INPUT ./gfx/examples/master_thesis-architecture.png
+INPUT gfx/examples/master_thesis-architecture.png
+INPUT ./gfx/examples/master_thesis-architecture.png
+INPUT ./gfx/examples/master_thesis-architecture.png
 INPUT ./frontbackmatter/Bibliography.tex
 INPUT ./frontbackmatter/Bibliography.tex
 INPUT ./frontbackmatter/Bibliography.tex
