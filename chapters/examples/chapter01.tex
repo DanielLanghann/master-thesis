@@ -5,45 +5,44 @@
 
 \chapter{Einleitung}
 \label{ch:intro}
-Das Thema Polystores ist bereits seit mehr als zehn Jahren Gegenstand aktiver Forschung. 
-Dies ist relativ einfach damit zu begründen, dass die digitale Welt immer vielschichiger und komplexer wird.
-Die Menge an zu verarbeitenden Daten steigt immer weiter. Wo es früher Ziel war, Datenbank Konzepte
-zu entwerfen und zu implementieren, die möglichst sparsam mit der knappen Ressource Speicherplatz
-umgehen, liegt heute der Fokus tendenziell auf Performance.
-Empfehlungs-Systeme müssen in der Lage sein in Echtzeit oder sehr schnell auf Basis von Inputs
-sinnvolle Vorschläge zum Beispiel im Kontext If a customer $\mathbf{C}$ bought item $\mathbf{A}$, then they also bought item $\mathbf{B}$ or item $\mathbf{C}$ or $\ldots$
+The topic of polystores has been an active area of research for more than ten years. 
+This is relatively easy to explain, as the digital world is becoming increasingly multifaceted and complex. 
+The amount of data to be processed continues to grow. 
+Whereas the goal used to be to design and implement database concepts that used storage space as sparingly as possible, 
+the focus today tends to be on performance. 
+Recommendation systems must be able to provide meaningful suggestions in real-time 
+or very quickly based on inputs, for example in the context of 
+a customer $\mathbf{C}$ bought item $\mathbf{A}$, then they also bought item $\mathbf{B}$ or item $\mathbf{C}$ or $\ldots$
 :
 \[
 \forall c \in \mathcal{C} \quad \Bigl( \text{Bought}(c, A) \implies \bigl( \text{Bought}(c, B) \lor \text{Bought}(c, C) \lor \cdots \bigr) \Bigr)
 \]
-Ein solche Anfrage kann nur sinnvoll und performant beantwortet werden, 
-wenn ein entsprechender Algorithmus sehr schnell Input von einer geeigneten
-Datenbank erhält. Eine solche Datenbank, kann zum Beispiel eine Graph-Datenbank sein.
-In zum Beispiel einem Web-Shop, wo ein solches Empfehlungs-System implementiert ist, entstehen
-häufig auch typische Datenbank Transaktionen sog. Create, Read, Update, Delete Operationen (CRUD).
-Solche Transaktionen können wiederum tendenziell besser über eine klassiche SQL Datenbank 
-abgewickelt werden.
-Eine solches System kann als ein Polystore bezeichnet werden, da es, um performant zu funktionieren,
-mindestens zwei verschiedene Datenbank-Systeme bzw. Data-Stores benötigt.
-Teilweise sind die Übergänge fließender als in dem oben genannten Beispiel des E-Commerce Systems 
-mit einer Datenbank für die Empfehlungs-Engine und einer Datenbank für den transaktionsbasierten 
-Teil des Systems.
-So lassen sich zum Beispiel so genannte Datenströme genau so gut in eine zum Beispiel
-dokumentenbasierte Datenbank abwickeln wie klassiche CRUD Operationen. Es wäre denkbar, dass beide
-Teile eines fiktiven Systems über zum Beispiel eine MongoDB abgebildet werden.
-Hier wäre es sinnvoll zu messen ob ein System welches aus zwei oder mehr verschiedenen Services besteht,
-die sich einen Datastore bzw. ein Datenbank System teilen, bei einem sich dynamisch ändernden Workload,
-eine Neuzzuteilung Service bzw. Dataset zu Datastore sinnvoll ist. Dies kann zum Beispiel sinnvoll sein,
-wenn bestimmte Transaktionen oder Commits immer mehr Zeit in Anspruch nehmen, was sich wiederum
-negativ auf die Benutzererfahrung bzw. die Performance des Systems auswirkt.
-Grundsätzlich geht es also darum, dass in einem System S mindestens zwei verschiedene Services
-S existieren,
-die jeweils einem Datastore D zugeordnet sind und einen gewissen Workload W aufweisen. 
-Ändert sich der Workload W bzw. werden bestimmte Grenzwerte Th überschritten, sollten die Services
-bzw. der betroffene Service einem anderen, gegebenfalls besser geeigneten Datastore zugeordnet werden.
-Dies sollte nur passieren, wenn der Service S in Verbindung mit dem neu zugewiesenen Datastore
-einen verbesserten Workload aufweist.
-Grundsätzlich kann der vorbezeichnete Sachverhalt wie folgt beschrieben werden:
+The topic of polystores has been an active area of research for more than ten years. 
+Such a request can only be meaningfully and efficiently answered if a suitable algorithm quickly receives input from an appropriate database. 
+Such a database could be, for example, a graph database. 
+In a web shop, for instance, where such a recommendation system is implemented, typical database transactions, 
+known as Create, Read, Update, Delete (CRUD) operations, frequently occur. 
+These transactions can often be better handled by a classical SQL database.
+Such a system can be referred to as a polystore because it requires at least two different database systems 
+or data stores to function efficiently. 
+Sometimes, the transitions are more fluid than in the aforementioned example of an e-commerce system 
+with one database for the recommendation engine and another for the transactional part of the system. 
+For example, so-called data streams can be handled just as well in a document-based database as classical CRUD operations. 
+It is conceivable that both parts of a hypothetical system could be mapped using, for example, a MongoDB.
+
+\noindent In this case, it would be sensible to measure whether a system consisting of two or more different services 
+that share a data store or database system would benefit from reallocating services or datasets to a data store when 
+faced with a dynamically changing workload. 
+This could be beneficial, for example, if certain transactions or commits start taking more time, negatively 
+impacting user experience or system performance.\newline
+
+\noindent Fundamentally, the issue is that in a system, there must be at least two different services $\mathbf{S}$, 
+each assigned to a data store $\mathbf{D}$ and having a certain workload $\mathbf{W}$. 
+If the workload $\mathbf{W}$ changes or certain thresholds $\mathbf{Th}$ are exceeded, 
+the services or the affected service should be assigned to another, possibly more suitable, data store $\mathbf{D}$. 
+This should only happen if the service $\mathbf{S}$, in conjunction with the newly assigned data store $\mathbf{D_n}$, exhibits an improved workload
+$\mathbf{W_i}$.\noindent
+In summary, the situation can be described as follows:
 \section*{Service Reassignment Based on Workload}
 
 We define the following:
@@ -90,9 +89,9 @@ D', & \text{if } \left( \bigl|W(S, A(S))_t - W(S, A(S))_{t-1}\bigr| \ge \epsilon
 A(S), & \text{otherwise.}
 \end{cases}
 \]
-Es gilt also permanent zu überprüfen wie ein System aus Datasets bzw. 
-Services und Datastores aufgebaut sein sollte um die Anforderungen 
-an dieses System optimal zu erfüllen. Genau diesem Thema widmet sich die forliegende Arbeit.
+It is therefore necessary to constantly check how a system of datasets, services, and data stores should be structured 
+in order to optimally meet the requirements for this system. 
+This is precisely the topic that the present work addresses.
 %
 % Section: Motiva
 %

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  9 MAR 2025 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.14)  6 APR 2025 18:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1408,23 +1408,8 @@ Package microtype Info: Character `029' is missing
  (./chapters/examples/chapter01.tex
 Chapter 1.
 
-Overfull \hbox (6.37283pt too wide) in paragraph at lines 18--47
-\T1/pplj/m/n/10.95 wenn ein entsprechen-der Al-go-rith-mus sehr schnell In-put von einer geeigneten
- []
+Underfull \hbox (badness 10000) in paragraph at lines 33--38
 
-
-Overfull \hbox (14.07802pt too wide) in paragraph at lines 18--47
-\T1/pplj/m/n/10.95 Datenbank sein. In zum Beispiel einem Web-Shop, wo ein solches Empfehlungs-
- []
-
-
-Overfull \hbox (2.38701pt too wide) in paragraph at lines 18--47
-\T1/pplj/m/n/10.95 System im-ple-men-tiert ist, entste-hen häu-fig auch typ-is-che Daten-bank Transak-
- []
-
-
-Overfull \hbox (9.85121pt too wide) in paragraph at lines 18--47
-\T1/pplj/m/n/10.95 tio-nen sog. Cre-ate, Read, Up-date, Delete Op-er-a-tio-nen (CRUD). Solche Transak-
  []
 
 [1
@@ -1440,83 +1425,83 @@ Overfull \hbox (9.85121pt too wide) in paragraph at lines 18--47
 
 
 ]
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 61.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
-Overfull \hbox (15.92113pt too wide) detected at line 92
+Overfull \hbox (15.92113pt too wide) detected at line 91
  $\OML/zplm/m/it/10.95 A[]\OT1/zplm/m/n/10.95 (\OML/zplm/m/it/10.95 S\OT1/zplm/m/n/10.95 ) = []$ 
  []
 
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
 
  []
 
 
-Overfull \hbox (11.17624pt too wide) in paragraph at lines 160--162
+Overfull \hbox (11.17624pt too wide) in paragraph at lines 159--161
 []\T1/pplj/m/n/10.95 5. The-o-retisch zu beschreiben welche Schritte un-ter-nom-men wer-den müssen,
  []
 
 
-Overfull \hbox (29.4773pt too wide) in paragraph at lines 178--183
+Overfull \hbox (29.4773pt too wide) in paragraph at lines 177--182
 []\T1/pplj/m/n/10.95 Chapter4 beschäftigt sich mit der Im-pl-men-tierung der Pro-to-typen in Verbindung
  []
 
 
-Overfull \hbox (2.8542pt too wide) in paragraph at lines 178--183
+Overfull \hbox (2.8542pt too wide) in paragraph at lines 177--182
 \T1/pplj/m/n/10.95 Pro-to-typ aufge-baut ist bzw. der Al-go-rith-mus zur dy-namis-chen Neuzuteilung
  []
 
 
-Overfull \hbox (14.85544pt too wide) in paragraph at lines 178--183
+Overfull \hbox (14.85544pt too wide) in paragraph at lines 177--182
 \T1/pplj/m/n/10.95 funk-tion-iert. Zusät-zlich wer-den die Ergeb-nisse aus dem Test-be-trieb beschrieben
  []
 
 [4]
 Chapter 2.
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 211--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 211--218
 
  []
 
 
-Overfull \hbox (8.90225pt too wide) in paragraph at lines 212--219
+Overfull \hbox (8.90225pt too wide) in paragraph at lines 211--218
 \T1/pplj/m/n/10.95 Metadata: Of-ten ac-com-pa-nied by meta-data that de-scribes the struc-ture, source,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 211--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--232
+Underfull \hbox (badness 10000) in paragraph at lines 223--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--232
+Underfull \hbox (badness 10000) in paragraph at lines 223--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
 
-Overfull \hbox (2.11325pt too wide) in paragraph at lines 238--241
+Overfull \hbox (2.11325pt too wide) in paragraph at lines 237--240
 \T1/pplj/m/n/10.95 sind, wer-den die bei-den Be-griffe Mullti-store und Poly-glot Per-sis-tenz definiert
  []
 
@@ -1527,21 +1512,21 @@ Overfull \hbox (2.11325pt too wide) in paragraph at lines 238--241
 <gfx/examples/master_thesis-multistore.png, id=105, 382.42876pt x 312.16624pt>
 File: gfx/examples/master_thesis-multistore.png Graphic file (type png)
 <use gfx/examples/master_thesis-multistore.png>
-Package pdftex.def Info: gfx/examples/master_thesis-multistore.png  used on input line 251.
+Package pdftex.def Info: gfx/examples/master_thesis-multistore.png  used on input line 250.
 (pdftex.def)             Requested size: 222.00226pt x 181.21373pt.
 
-Overfull \hbox (0.59117pt too wide) in paragraph at lines 257--260
+Overfull \hbox (0.59117pt too wide) in paragraph at lines 256--259
 []\T1/pplj/m/n/10.95 Polyglot Per-sis-tenz Ein Poly-store wiederum bi-etet ver-schiedene öf-fentliche
  []
 
 <gfx/examples/master_thesis-polystore.png, id=107, 451.6875pt x 312.16624pt>
 File: gfx/examples/master_thesis-polystore.png Graphic file (type png)
 <use gfx/examples/master_thesis-polystore.png>
-Package pdftex.def Info: gfx/examples/master_thesis-polystore.png  used on input line 263.
+Package pdftex.def Info: gfx/examples/master_thesis-polystore.png  used on input line 262.
 (pdftex.def)             Requested size: 222.00226pt x 153.4296pt.
 Chapter 3.
 [7 <./gfx/examples/master_thesis-multistore.png> <./gfx/examples/master_thesis-polystore.png>]
-Overfull \hbox (7.7737pt too wide) in paragraph at lines 290--296
+Overfull \hbox (7.7737pt too wide) in paragraph at lines 289--295
 \T1/pplj/m/n/10.95 nung, einge-bet-tet in das in dem vo-r-ange-gan-genen Kapi-tel TODO beschriebene
  []
 
@@ -1552,35 +1537,35 @@ Overfull \hbox (7.7737pt too wide) in paragraph at lines 290--296
 <gfx/examples/master_thesis-architecture.png, id=122, 522.95375pt x 783.92876pt>
 File: gfx/examples/master_thesis-architecture.png Graphic file (type png)
 <use gfx/examples/master_thesis-architecture.png>
-Package pdftex.def Info: gfx/examples/master_thesis-architecture.png  used on input line 303.
+Package pdftex.def Info: gfx/examples/master_thesis-architecture.png  used on input line 302.
 (pdftex.def)             Requested size: 222.00226pt x 332.78851pt.
 
-Overfull \hbox (4.08746pt too wide) in paragraph at lines 314--315
+Overfull \hbox (4.08746pt too wide) in paragraph at lines 313--314
 []\T1/pplj/m/n/10.95 Analyse von eige-hen-den Datasets um rel-e-vante Fea-
  []
 
 [9 <./gfx/examples/master_thesis-architecture.png>]
-Overfull \hbox (9.73763pt too wide) in paragraph at lines 342--343
+Overfull \hbox (9.73763pt too wide) in paragraph at lines 341--342
 []\T1/pplj/m/n/10.95 Detection of changes that war-rant re-as-sign-ment, based
  []
 
 
-Overfull \hbox (7.7698pt too wide) in paragraph at lines 343--344
+Overfull \hbox (7.7698pt too wide) in paragraph at lines 342--343
 []\T1/pplj/m/n/10.95 Triggers re-as-sign-ments with min-i-mal dis-
  []
 
 
-Overfull \hbox (0.70071pt too wide) in paragraph at lines 354--356
+Overfull \hbox (0.70071pt too wide) in paragraph at lines 353--355
 \T1/pplj/m/n/10.95 Nach dem die Ar-chitek-tur des Gesamt-sys-tems im Kapi-tel [][]3.1.1[][] erk-lärt wurde,
  []
 
 [10]
-Overfull \hbox (4.78827pt too wide) in paragraph at lines 362--363
+Overfull \hbox (4.78827pt too wide) in paragraph at lines 361--362
 []\T1/pplj/m/n/10.95 : Clus-ter struc-tured ver-sus un-struc-tured data and schema
  []
 
 
-Overfull \hbox (4.22984pt too wide) in paragraph at lines 366--367
+Overfull \hbox (4.22984pt too wide) in paragraph at lines 365--366
 []\T1/pplj/m/n/10.95 : Clus-ter strong ver-sus even-tual con-sis-tency. 
  []
 
@@ -1807,15 +1792,15 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32877 strings out of 476025
- 626919 string characters out of 5790016
+ 32880 strings out of 476025
+ 626936 string characters out of 5790016
  1865388 words of memory out of 5000000
  52634 multiletter control sequences out of 15000+600000
- 585947 words of font info for 144 fonts, out of 8000000 for 9000
+ 587093 words of font info for 147 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,22n,124p,10645b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (20 pages, 217689 bytes).
+Output written on thesis.pdf (20 pages, 217426 bytes).
 PDF statistics:
  284 PDF objects out of 1000 (max. 8388607)
  228 compressed objects within 3 object streams
